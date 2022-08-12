@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+.land-img-fix #parent {
+  font-family: 'Roboto', sans-serif;
+  transform: translate3d(0, 0, 0);
+  border: 0 !important;
+  contain: content;
+}
+
+.land-img-fix #landing-page {
+  border: 0 !important;
+  width: 100%;
+  height: 900px;
+}
+
+.land-img-fix #landing-page img {
+  border: 0 !important;
+  height: 100%;
+  width: 100%;
+}
+
+.land-img-fix .text-temp {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  padding: 2em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-temp h1 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 8em;
+  color: white;
+}
+
+.text-temp h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+@media only screen and (min-width: 1440px) {
+  .land-img-fix #landing-page {
+    height: 100vh;
+  }
+
+  .land-img-fix .text-temp h1 {
+    font-size: 12em;
+  }
+
+  .land-img-fix .text-temp h4 {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+
+  /*landing page */
+  .land-img-fix #landing-page {
+    height: 600px;
+  }
+
+  .land-img-fix .text-temp h1 {
+    font-size: 6em;
+  }
+
+  .land-img-fix .text-temp h4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .land-img-fix .text-temp h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .land-img-fix .text-temp h1 {
+    font-size: 2em;
+  }
+}
